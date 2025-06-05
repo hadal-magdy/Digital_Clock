@@ -52,15 +52,15 @@ int main() {
 
         }
         ++seconds;
-        if (seconds > 60) {
+        if (seconds == 60) {
             ++minutes;
             seconds = 0;
         }
-        if (minutes > 60) {
+        if (minutes == 60) {
             ++hours;
             minutes = 0;
         }
-        if (hours > 12) {
+        if (hours == 12) {
             hours = 0;
 
         }
